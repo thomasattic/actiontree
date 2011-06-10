@@ -1,4 +1,4 @@
 
-require 'lib/simple-ruby-facebook-example'
+require 'lib/main'
 run SimpleRubyFacebookExample
 
