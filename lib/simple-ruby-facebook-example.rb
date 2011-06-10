@@ -98,5 +98,6 @@ class SimpleRubyFacebookExample < Sinatra::Application
       doc = RestClient.put("#{DB}/#{params[:doc]}", '{"put": true}')
     else
       halt 401, "Unauthorized"
+    end
   end
 end
