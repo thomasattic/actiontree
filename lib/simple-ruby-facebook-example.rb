@@ -12,7 +12,7 @@ require 'haml'
 APP_ID = 162338397164849 # your app id
 APP_CODE = 'bcd8de38951104ab19f51972f4d60eb3' # your app code
 SITE_URL = 'http://deep-ice-130.heroku.com/' # your app site url
-DB = "#{ENV['CLOUDANT_URL']}/jdata"
+# DB = "#{ENV['CLOUDANT_URL']}/jdata"
 
 class SimpleRubyFacebookExample < Sinatra::Application
 
@@ -51,6 +51,10 @@ class SimpleRubyFacebookExample < Sinatra::Application
 			'<a href="/login">Login</a>'
 		end
     end
+
+  get '/' do
+    redirect '/index.html'
+  end
 
 	get '/login' do
 		# generate a new oauth object with your app data and your callback url
