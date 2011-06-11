@@ -52,9 +52,9 @@ class SimpleRubyFacebookExample < Sinatra::Application
 		end
     end
 
-  get '/' do
-    redirect '/index.html'
-  end
+    get '/' do
+        redirect '/index.html'
+    end
 
 	get '/login' do
 		# generate a new oauth object with your app data and your callback url
