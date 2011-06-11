@@ -1,2 +1,2 @@
-require 'rb/frontier'
+require './rb/frontier'
 run SimpleRubyFacebookExample
