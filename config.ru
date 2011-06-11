@@ -1,2 +1,2 @@
-require 'lib/main.rb'
+require 'lib/main'
 run SimpleRubyFacebookExample
